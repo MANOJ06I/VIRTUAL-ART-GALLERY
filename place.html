@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Tourist Places</title>
+    <style>
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            background-color: #222;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem 0;
+            text-align: center;
+            color: #fff;
+            z-index: 1000;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Section Styling with Parallax Effect */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+        }
+        .section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            transition: background 0.5s ease;
+        }
+        .section:hover .overlay {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Content Styling */
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+        .content h2 {
+            font-size: 3.5rem;
+            margin: 0.5rem 0;
+            text-transform: uppercase;
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin-top: 1rem;
+        }
+
+        /* Parallax Backgrounds */
+        #eiffel {
+            background-image: url('eiffle tower.webp');
+        }
+        #greatwall {
+            background-image: url('thegreatwall.jpg');
+        }
+        #machupicchu {
+            background-image: url('machupichu.jpg');
+        }
+        #tajmahal {
+            background-image: url('tajmahal.jpg');
+        }
+        #statueofliberty {
+            background-image: url('statueofliberty.jpg');
+        }
+        #bali {
+            background-image: url('baliigate.jpg');
+        }
+        #bagan {
+            background-image: url('bagan3.jpg');
+        }
+        #italy {
+            background-image: url('italyy.webp');
+        }
+        #goa {
+            background-image: url('goa.jpg');
+        }
+        #japan {
+            background-image: url('japaan.webp');
+        }
+        #salz {
+            background-image: url('salzburg.avif');
+        }
+        #banff {
+            background-image: url('banff.jpg');
+        }
+        #thailand {
+            background-image: url('thai.jpg');
+        }
+        #egypt {
+            background-image: url('egypt.webp');
+        }
+        
+        
+        
+        
+        
+        
+
+        /* Animation */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #111;
+            padding: 1.5rem;
+            color: #aaa;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sticky Header -->
+<header>
+    <nav>
+        <a href="#eiffel">Eiffel Tower</a>
+        <a href="#greatwall">Great Wall</a>
+        <a href="#machupicchu">Machu Picchu</a>
+        <a href="#tajmahal">Taj Mahal</a>
+        <a href="#statueofliberty">Statue of Liberty</a>
+        <a href="#bali">Bali</a>
+        <a href="#bagan">Bagan</a>
+        <a href="#italy">Italy</a>
+        <a href="#goa">Goa</a>
+        <a href="#japan">Kyoto</a>
+        <a href="#salz">Salzburg</a>
+        <a href="#banff">Banff</a>
+        <a href="#thailand">Krabi Province</a>
+        <a href="#egypt">Egypt</a>
+        
+    </nav>
+</header>
+
+<!-- Parallax Sections for Tourist Places -->
+<section id="eiffel" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Eiffel Tower</h2>
+        <p>Experience the romantic allure of Paris with a visit to the Eiffel Tower, a true symbol of France and one of the world’s most iconic structures.</p>
+    </div>
+</section>
+
+<section id="greatwall" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Great Wall of China</h2>
+        <p>Marvel at the Great Wall, an ancient wonder stretching across China, representing the nation’s resilience and breathtaking landscapes.</p>
+    </div>
+</section>
+
+<section id="machupicchu" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Machu Picchu</h2>
+        <p>Discover the mystical ruins of Machu Picchu, nestled in the Andes Mountains, and experience the legacy of the Incan Empire.</p>
+    </div>
+</section>
+
+<section id="tajmahal" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Taj Mahal</h2>
+        <p>The Taj Mahal, a testament to love and architectural beauty, stands as one of the most breathtaking landmarks in the world.</p>
+    </div>
+</section>
+
+<section id="statueofliberty" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Statue of Liberty</h2>
+        <p>Embodying freedom and hope, the Statue of Liberty proudly welcomes visitors to the shores of New York City and the United States.</p>
+    </div>
+</section>
+<section id="bali" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Bali</h2>
+        <p>Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands.An exotic tropical destination that flaunts scenic beaches and mountains,</p>
+    </div>
+</section>
+<section id="bagan" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Bagan</h2>
+        <p>Bagan is an ancient city and a UNESCO World Heritage Site in the Mandalay Region of Myanmar.Bagan is famous for its historical monuments and houses around 2000 monuments from different periods</p>
+    </div>
+</section>
+<section id="italy" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Italy</h2>
+        <p>Italy is well-known for its architecture, culture, art, opera, literature, film, and fashion. This is one of the best countries to go on a foreign tour.</p>
+    </div>
+</section>
+<section id="goa" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Goa</h2>
+        <p>The state of Goa, in India, is famous for its beaches and places of worship. Tourism is its primary industry, and is generally focused on the coastal areas of Goa, with decreased tourist activity inland.</p>
+    </div>
+</section>
+<section id="japan" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Kyoto,japan</h2>
+        <p>Kyoto is home to 17 UNESCO World Cultural Heritage Sites and over 2,000 temples and shrines. Additionally, Kyoto was rated “The World's Best City” for 2 consecutive years in 2014 and 2015 by readers of “Travel+Leisure”, one of the world's most influential travel magazines.</p>
+    </div>
+</section>
+<section id="salz" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2> salzburg,austria</h2>
+        <p>Salzburg is the city where W. A. Mozart was born and the shooting location for "The Sound of Music". the city of Salzburg is just as beautiful in the summer as it is when buried under a blanket of white snow.</p>
+    </div>
+</section>
+<section id="banff" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>banff,alberta</h2>
+        <p>The natural beauty of Banff's surrounding lakes and mountains made it Canada's first National Park and the world's third national park refuge, and part of the Canadian Rocky Mountain Parks UNESCO World Heritage Site.</p>
+    </div>
+</section><section id="thailand" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>Krabi Province,Thailand</h2>
+        <p>Krabi is famous for its impressive karst scenery and breathtaking white sand beaches, where you can enjoy a variety of water sports and outdoor activities. It is also known for numerous marine parks and rainforests with abundant wildlife, mangroves, caves, and waterfalls.</p>
+    </div>
+</section>
+</section><section id="egypt" class="section">
+    <div class="overlay"></div>
+    <div class="content">
+        <h2>egypt</h2>
+        <p>Egypt is very famous for its ancient civilization and the monuments of the majestic pharaohs, such as the Great Pyramids of Giza, the Great Sphinx, the Egyptian Museum, the GEM (The Grand Egyptian Museum), Sakkara, and Dahshur.</p>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Famous Tourist Places. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

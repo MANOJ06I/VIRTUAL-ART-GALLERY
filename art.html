@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            scroll-behavior: smooth;
+            background-color: #f0f0f5;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        section {
+            padding: 4rem 2rem;
+        }
+        .showcase {
+            background-color: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        .showcase h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffcc00;
+        }
+        .showcase p {
+            font-size: 1.1rem;
+            color: #ddd;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .artists {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .artist-profile {
+            flex: 1 1 calc(50% - 2rem);
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .artist-profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .artist-profile h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .artist-profile p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+        .gallery {
+            padding: 4rem 2rem;
+            background-color: #f3f4f6;
+            text-align: center;
+        }
+        .gallery h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .art-piece {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .art-piece img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .art-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>Art Showcase</h1>
+    <nav>
+        <a href="#showcase">Home</a>
+        <a href="#artists">Artists</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+</header>
+
+<!-- Showcase Section -->
+<section id="showcase" class="showcase">
+    <h2>Welcome to the Art Showcase</h2>
+    <p>Experience the diverse world of painted art. Explore our curated collection from contemporary and classic artists.</p>
+</section>
+
+<!-- Artists Section -->
+<section id="artists" class="artists">
+    <div class="artist-profile">
+        <img src="file.png" alt="Artist 1">
+        <h3>Leonardo da Vinci</h3>
+        <p> An Italian Renaissance painter who created Mona Lisa, The Last Supper, and Vitruvian Man. This artist is known for vibrant landscapes and abstract themes.less than 20 surviving paintings that can be definitely attributed to him</p>
+    </div>
+    <div class="artist-profile">
+        <img src="pablo-picasso-699_480x600f.707f8-removebg-preview.png" alt="Artist 2">
+        <h3>Pablo Picasso</h3>
+        <p>A Spanish artist who co-founded Cubism and invented collage. His work includes Les Demoiselles d'Avignon and Three Women at the Spring. Known for unique color palettes and expressive brushwork.</p>
+    </div>
+    <section id="artists" class="artists">
+        <div class="artist-profile">
+            <img src="220px-Carolus-Duran_-_Portrait_de_Claude_Monet_-_Musée_Marmottan_Monet-removebg-preview.png" alt="Artist 1">
+            <h3>Claude Monet</h3>
+            <p>A painter who captured the changing effects of light on landscapes. This artist is known for vibrant landscapes and abstract themes.</p>
+        </div>
+        <div class="artist-profile">
+            <img src="images__3_-removebg-preview.png" alt="Artist 2">
+            <h3>Michelangelo</h3>
+            <p>An Italian painter, sculptor, architect, and poet who designed the ceiling of the Sistine Chapel and created Pieta.. Known for unique color palettes and expressive brushwork.</p>
+        </div>
+        <div class="artist-profile">
+            <img src="Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project__454045_-removebg-preview.png" alt="Artist 1">
+            <h3>Vincent van Gogh</h3>
+            <p> A Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art.  In just over a decade, he created approximately 2100 artworks, including around 860 oil paintings, most of them in the last two years of his life. .</p>
+        </div>
+    <!-- Add more artist profiles as needed -->
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <div class="art-piece">
+            <img src="Mona-Lisa-oil-wood-panel-Leonardo-da.webp" alt="Art Piece 1">
+            <div class="art-info">Art of Leonardo da Vinc| Medium: Oil on Canvas</div>
+        </div>
+        <div class="art-piece">
+            <img src="pablo.jpg" alt="Art Piece 2">
+            <div class="art-info">Art of pablo Picasso | Medium: Watercolor</div>
+        </div>
+        <div class="art-piece">
+            <img src="Claude-Monet-Woman-Parasol-oil-canvas-Her-1875.webp" alt="Art Piece 3">
+            <div class="art-info">Art of Claude Monet | Medium: Acrylic on Canvas</div>
+        </div>
+        <div class="art-piece">
+            <img src="Last_Judgement_(Michelangelo).jpg" alt="">
+            <div class="art-info"> Art of Michelangelo | Medium: Oil on Canvas</div>
+        </div>
+        <div class="art-piece">
+            <img src="paint van.png" alt="Art Piece 2">
+            <div class="art-info">Title: Art of Vincent van gogh | Medium: Watercolor</div>
+        </div>
+        
+        <!-- Add more art pieces as needed -->
+    </div>
+</section>
+<br><br>
+<!-- Footer -->
+<footer><br>
+    <p>&copy; 2024 Art Showcase. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

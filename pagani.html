@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagani Cars</title>
+<style>* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a; /* Dark background for luxury feel */
+    color: #fff;
+}
+
+.header {
+    background: url('pagani-header.jpg') no-repeat center center/cover; /* Replace with a captivating header image */
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.header p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background: #444;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #ffcc00; /* Gold color for luxury */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #fff; /* White on hover for contrast */
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.car-section {
+    background: #2a2a2a; /* Dark grey for car sections */
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.car-content {
+    display: flex;
+    align-items: center;
+}
+
+.car-img {
+    width: 40%; /* Large image size */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.car-description {
+    flex: 1;
+}
+
+h2 {
+    color: #ffcc00; /* Gold for titles */
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #444;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Pagani</h1>
+        <p>Art Meets Engineering</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#pagani-zonda">Pagani Zonda</a></li>
+            <li><a href="#pagani-huayra">Pagani Huayra</a></li>
+            <li><a href="#pagani-wira">Pagani Wira</a></li>
+            <li><a href="#about">About Pagani</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="pagani-zonda" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="Pagani-Zonda_R-2008-Side_Profile.cac33b10-removebg-preview.png" alt="Pagani Zonda" />
+                <div class="car-description">
+                    <h2>Pagani Zonda</h2>
+                    <p>The Zonda is an icon of automotive engineering, combining extreme performance with stunning aesthetics.</p>
+                    <ul>
+                        <li>0-60 mph in 3.5 seconds</li>
+                        <li>Top speed: 215 mph</li>
+                        <li>Power: 789 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagani-huayra" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="Pagani-huayra-codalunga-side-505x336-removebg-preview.png" alt="Pagani Huayra" />
+                <div class="car-description">
+                    <h2>Pagani Huayra</h2>
+                    <p>The Huayra blends cutting-edge technology with exquisite design, showcasing Pagani's commitment to perfection.</p>
+                    <ul>
+                        <li>0-60 mph in 2.8 seconds</li>
+                        <li>Top speed: 238 mph</li>
+                        <li>Power: 720 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagani-wira" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="revo06-removebg-preview.png" alt="Pagani Wira" />
+                <div class="car-description">
+                    <h2>Pagani Wira</h2>
+                    <p>The Wira is a masterpiece of design, crafted for those who demand the extraordinary in every detail.</p>
+                    <ul>
+                        <li>0-60 mph in 3.2 seconds</li>
+                        <li>Top speed: 230 mph</li>
+                        <li>Power: 800 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Pagani</h2>
+            <p>Pagani is a manufacturer of high-performance sports cars, renowned for its meticulous craftsmanship and stunning designs.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pagani Automobili S.p.A.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Rover Cars</title>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #423518;
+        color: #000000;
+    }
+    
+    .header {
+        background: url('hero-background.jpg') no-repeat center center/cover; /* Replace with a stunning background image */
+        padding: 50px 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .header h1 {
+        font-size: 3.5em;
+        margin-bottom: 10px;
+    }
+    
+    .header p {
+        font-size: 2em;
+    }
+    
+    .btn {
+        padding: 10px 25px;
+        background-color: #000000; /* A luxury blue */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        text-decoration: none;
+    }
+    
+    .navbar {
+        background: #000000;
+        padding: 15px 0;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar ul li {
+        margin: 0 15px;
+    }
+    
+    .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    .navbar ul li a:hover {
+        color: #ffcc00; /* Change color to gold on hover */
+    }
+    
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    .car-section {
+        display: flex;
+        align-items: center;
+        margin: 40px 0;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .car-image {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .small-img {
+        width: 80%; /* Smaller image size */
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 10px;
+    }
+    
+    .car-description {
+        flex: 2;
+        padding: 20px;
+    }
+    
+    h2 {
+        color: #000000; /* Luxury blue for titles */
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Range Rover</h1>
+        <p>Where Luxury Meets Adventure</p>
+        <a href="#cars" class="btn">Discover the Range</a>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#range-rover-sport">Range Rover Sport</a></li>
+            <li><a href="#range-rover-evoque">Range Rover Evoque</a></li>
+            <li><a href="#range-rover-velar">Range Rover Velar</a></li>
+            <li><a href="#about">About Range Rover</a></li>
+        </ul>
+    </nav>
+
+    <main id="cars">
+        <section id="range-rover-sport" class="car-section">
+            <div class="car-image">
+                <img class="small-img" src="i show.png" alt="Range Rover Sport" />
+            </div>
+            <div class="car-description">
+                <h2>Range Rover Sport</h2>
+                <p>Combining performance with luxury, the Range Rover Sport delivers an exhilarating driving experience.</p>
+                <ul>
+                    <li>0-60 mph in 4.3 seconds</li>
+                    <li>Top speed: 140 mph</li>
+                    <li>Power: 518 horsepower</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="range-rover-evoque" class="car-section">
+            <div class="car-image">
+                <img class="small-img" src="istockphoto-458235047-612x612-removebg-preview.png" alt="Range Rover Evoque" />
+            </div>
+            <div class="car-description">
+                <h2>Range Rover Evoque</h2>
+                <p>The Evoque is a stylish compact SUV, ideal for urban living without compromising on capability.</p>
+                <ul>
+                    <li>0-60 mph in 6.6 seconds</li>
+                    <li>Top speed: 135 mph</li>
+                    <li>Power: 246 horsepower</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="range-rover-velar" class="car-section">
+            <div class="car-image">
+                <img class="small-img" src="e9580634b4762ad1027cb2aef4c44a51-removebg-preview.png" alt="Range Rover Velar" />
+            </div>
+            <div class="car-description">
+                <h2>Range Rover Velar</h2>
+                <p>With its modern design and cutting-edge technology, the Velar stands out as a true luxury SUV.</p>
+                <ul>
+                    <li>0-60 mph in 5.3 seconds</li>
+                    <li>Top speed: 170 mph</li>
+                    <li>Power: 395 horsepower</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Range Rover </h2> 
+            <p>Range Rover is synonymous with luxury SUVs, merging innovative design with unparalleled performance.</p>
+        </section>
+    </main>
+<br>
+    <footer>
+        <p>&copy; 2024 Land Rover</p>
+    </footer>
+</body>
+</html>
