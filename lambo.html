@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Cars</title>
+    <style>* {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #304155;
+        color: #000000;
+        scroll-behavior: smooth;
+    }
+    
+    header.hero {
+        background: url('hero-background.jpg') no-repeat center center/cover; /* Replace with a stunning background image */
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        background-color: #f00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    nav {
+        background: #111;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        color: #ffcc00; /* Change color to a gold on hover */
+    }
+    
+    main {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .car-card {
+        display: flex;
+        align-items: center;
+        margin: 40px 0;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+    }
+    
+    .small-img {
+        width: 30%; /* Smaller image size */
+        object-fit: cover; /* Maintain aspect ratio */
+        height: auto;
+        border-radius: 15px 0 0 15px; /* Rounded corners */
+    }
+    
+    .car-info {
+        padding: 20px;
+        width: 70%; /* Details take up more space */
+    }
+    
+    h2 {
+        color: #f00; /* Lamborghini's signature color */
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: #fff;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Lamborghini</h1>
+            <p>Experience the thrill of luxury and performance</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#huracan">Huracán</a></li>
+            <li><a href="#aventador">Aventador</a></li>
+            <li><a href="#urus">Urus</a></li>
+            <li><a href="#about">About Lamborghini</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="car-grid">
+            <section id="huracan" class="car-card">
+                <img class="small-img" src="f2c555cf344df512af367c493e80e7e9-removebg-preview.png" alt="Lamborghini Huracán" />
+                <h2>Huracán</h2>
+                <p>The Huracán is a perfect blend of performance and style, offering a thrilling driving experience.</p>
+                <ul>
+                    <li>0-60 mph in 3.2 seconds</li>
+                    <li>Top speed: 201 mph</li>
+                    <li>Power: 631 horsepower</li>
+                </ul>
+            </section>
+
+            <section id="aventador" class="car-card">
+                <img class="small-img" src="dgfol6e-76c5488d-325c-4465-9c28-299e1d7472e9-removebg-preview.png" alt="Lamborghini Aventador" />
+                <h2>Aventador</h2>
+                <p>The Aventador showcases Lamborghini's iconic design and powerful V12 engine.</p>
+                <ul>
+                    <li>0-60 mph in 2.9 seconds</li>
+                    <li>Top speed: 217 mph</li>
+                    <li>Power: 730 horsepower</li>
+                </ul>
+            </section>
+
+            <section id="urus" class="car-card">
+                <img class="small-img" src="lamb.png" alt="Lamborghini Urus" />
+                <h2>Urus</h2>
+                <p>The Urus combines the luxury of a sports SUV with the performance expected from a Lamborghini.</p>
+                <ul>
+                    <li>0-60 mph in 3.2 seconds</li>
+                    <li>Top speed: 190 mph</li>
+                    <li>Power: 641 horsepower</li>
+                </ul>
+            </section>
+        </div>
+
+        <section id="about">
+            <h2>About Lamborghini</h2>
+            <p>Lamborghini is an Italian manufacturer known for luxury sports cars and SUVs. Combining cutting-edge technology with extreme performance, Lamborghini continues to set the standard for high-performance vehicles.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Automobili Lamborghini</p>
+    </footer>
+</body>
+</html>

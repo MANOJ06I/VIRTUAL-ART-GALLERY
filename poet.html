@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poetry Showcase</title>
+    <style>
+        /* Basic Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            color: #333;
+            overflow-x: hidden;
+            background: #f7f7f7;
+            line-height: 1.6;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: #525241;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        header nav a {
+            
+            color: #e9e6b4;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ff4500;
+        }
+
+        /* Section Styling */
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            padding: 2rem;
+            transition: background 0.5s ease;
+            overflow: hidden;
+        }
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+        .section:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+
+        /* Content Styling */
+        .content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease;
+        }
+        .content h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #ff4500;
+        }
+        .content p {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #111;
+            padding: 1.5rem;
+            color: #aaa;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sticky Header -->
+<header>
+    <nav>
+        <a href="#poem1"><B style="font-size: 30px;">POETRY</B></a>
+        
+    </nav>
+</header>
+
+<!-- Poetry Sections -->
+<section id="poem1" class="section">
+    <div class="content">
+        <h2>Whispers of the Night</h2>
+        <p>In the hush of darkness, whispers roam,<br>
+        Secrets carried on the breeze, like a dream's sweet foam.<br>
+        Stars blink softly, a celestial guide,<br>
+        As shadows dance with the moon’s gentle tide.</p>
+    </div>
+</section>
+
+<section id="poem2" class="section">
+    <div class="content">
+        <h2>Dancing Leaves</h2>
+        <p>Golden leaves twirl in the autumn air,<br>
+        A waltz of nature, free from all care.<br>
+        They flutter and spin, a vibrant ballet,<br>
+        Telling tales of summer, now drifting away.</p>
+    </div>
+</section>
+
+<section id="poem3" class="section">
+    <div class="content">
+        <h2>Silent Echoes</h2>
+        <p>In the stillness of the forest, echoes softly play,<br>
+        Murmurs of the past, in the light of day.<br>
+        Each rustle of leaves, each sigh of the breeze,<br>
+        A reminder of stories held in ancient trees.</p>
+    </div>
+</section>
+
+<section id="poem4" class="section">
+    <div class="content">
+        <h2>The Journey</h2>
+        <p>Life is a journey, with paths yet unknown,<br>
+        Steps taken in courage, seeds of dreams sown.<br>
+        Through valleys of sorrow and mountains of joy,<br>
+        Each moment a treasure, no fear to destroy.</p>
+    </div>
+</section>
+
+<section id="poem5" class="section">
+    <div class="content">
+        <h2>Awakening</h2>
+        <p>Awakened by dawn, the world starts anew,<br>
+        Sunlight spills gold on the morning dew.<br>
+        With each rise of light, hope starts to sing,<br>
+        A melody of life, as the day takes wing.</p>
+    </div>
+</section>
+
+<section id="poem6" class="section">
+    <div class="content">
+        <h2>Reflections</h2>
+        <p>In the mirror of water, my soul meets its gaze,<br>
+        Ripples of memory dance in the haze.<br>
+        Each droplet a moment, a story untold,<br>
+        Reflections of life, in silver and gold.</p>
+    </div>
+</section>
+
+<section id="poem7" class="section">
+    <div class="content">
+        <h2>Embers of Love</h2>
+        <p>In the hearth of my heart, embers still glow,<br>
+        Memories of passion, from long ago.<br>
+        Flickers of laughter, warmth of embrace,<br>
+        Love's gentle fire, time cannot erase.</p>
+    </div>
+</section>
+
+<section id="poem8" class="section">
+    <div class="content">
+        <h2>The Silent Sea</h2>
+        <p>The sea whispers secrets, in a voice soft and low,<br>
+        Waves caress the shore, where the wild winds blow.<br>
+        A canvas of blue, stretching far and wide,<br>
+        In its depths lie treasures, where dreams reside.</p>
+    </div>
+</section>
+
+<section id="poem9" class="section">
+    <div class="content">
+        <h2>Dreams Unfold</h2>
+        <p>With each gentle breeze, new dreams come to life,<br>
+        Seeds of our hopes, escaping the strife.<br>
+        They flutter like petals, on the winds of the day,<br>
+        Guiding our spirits, lighting the way.</p>
+    </div>
+</section>
+
+<section id="poem10" class="section">
+    <div class="content">
+        <h2>Stars in the Sky</h2>
+        <p>Stars twinkle brightly in the velvet night,<br>
+        Each one a wish, a flicker of light.<br>
+        They dance in the darkness, a celestial ballet,<br>
+        Guiding lost souls, lighting the way.</p>
+    </div>
+</section>
+
+<section id="poem11" class="section">
+    <div class="content">
+        <h2>Echoes of Time</h2>
+        <p>Time whispers softly, a fleeting refrain,<br>
+        Moments like shadows, they drift through the rain.<br>
+        Each tick of the clock, a heartbeat so dear,<br>
+        Memories echo, forever near.</p>
+    </div>
+</section>
+
+<section id="poem12" class="section">
+    <div class="content">
+        <h2>Winter’s Embrace</h2>
+        <p>Snowflakes are falling, a soft, silent hymn,<br>
+        Nature's white blanket, covering dim.<br>
+        The world holds its breath, in winter's embrace,<br>
+        A tranquil reminder of beauty and grace.</p>
+    </div>
+</section>
+
+<section id="poem13" class="section">
+    <div class="content">
+        <h2>The Golden Hour</h2>
+        <p>As the sun dips low, the world ignites,<br>
+        With shades of amber, the sky ignites.<br>
+        A fleeting moment, where time stands still,<br>
+        Beauty unfolds with a magical thrill.</p>
+    </div>
+</section>
+
+<section id="poem14" class="section">
+    <div class="content">
+        <h2>Fleeting Moments</h2>
+        <p>Moments are whispers, soft and serene,<br>
+        Fleeting like shadows, caught in between.<br>
+        Treasure them gently, like petals in flight,<br>
+        Each one a memory, glowing with light.</p>
+    </div>
+</section>
+
+<section id="poem15" class="section">
+    <div class="content">
+        <h2>The Heart's Whisper</h2>
+        <p>Listen to your heart, it speaks in the night,<br>
+        With dreams and desires, taking their flight.<br>
+        Follow its rhythm, let it guide you through,<br>
+        The melody of life, forever true.</p>
+    </div>
+</section>
+
+<section id="poem16" class="section">
+    <div class="content">
+        <h2>Beneath the Moon</h2>
+        <p>Under the moonlight, secrets are shared,<br>
+        Dreams intertwine, as hearts are bared.<br>
+        In the glow of the night, love finds its way,<br>
+        A timeless connection, come what may.</p>
+    </div>
+</section>
+
+<section id="poem17" class="section">
+    <div class="content">
+        <h2>The Color of Dreams</h2>
+        <p>In hues of passion, our dreams take flight,<br>
+        Brush strokes of hope, painting the night.<br>
+        Each color a whisper, each shade a sigh,<br>
+        In the canvas of life, let your spirit fly.</p>
+    </div>
+</section>
+
+<section id="poem18" class="section">
+    <div class="content">
+        <h2>Chasing Shadows</h2>
+        <p>Shadows dance lightly on the edge of light,<br>
+        Flickering moments that fade out of sight.<br>
+        In the chase of our dreams, let go of your fears,<br>
+        Embrace the unknown, let laughter be near.</p>
+    </div>
+</section>
+
+<section id="poem19" class="section">
+    <div class="content">
+        <h2>A Dance of Flames</h2>
+        <p>Fires flicker softly, a dance of delight,<br>
+        Warmth and illumination in the heart of the night.<br>
+        Each flame tells a story, each spark a dream,<br>
+        In the glow of the fire, all things may seem.</p>
+    </div>
+</section>
+
+<section id="poem20" class="section">
+    <div class="content">
+        <h2>In the Garden of Thought</h2>
+        <p>In the garden of thought, where ideas bloom,<br>
+        Flowers of wisdom dispel all gloom.<br>
+        Nurtured with care, each thought takes its place,<br>
+        A tapestry woven with beauty and grace.</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Poetry Showcase. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

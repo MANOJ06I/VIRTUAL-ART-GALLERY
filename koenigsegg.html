@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koenigsegg</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Overlay effect for readability */
+        .overlay {
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5em;
+            color: #ffcc00; /* Koenigsegg Yellow */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-top: 50px;
+        }
+
+        /* Main content */
+        .content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .about-section, .models-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Models grid */
+        .models-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .model-card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .model-card:hover {
+            transform: scale(1.05);
+        }
+
+        .model-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 0.3s;
+        }
+
+        .model-card h3 {
+            color: #ffcc00;
+            font-size: 1.5em;
+            margin-top: 15px;
+        }
+
+        .model-card p {
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #888;
+            background: rgba(0, 0, 0, 0.9);
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .header {
+                font-size: 2em;
+            }
+
+            .about-section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        Koenigsegg
+    </header>
+
+    <!-- About Section -->
+    <section class="content about-section">
+        <h2>About Koenigsegg</h2>
+        <p>
+            Koenigsegg is a Swedish manufacturer of high-performance sports cars known for its groundbreaking technology and record-breaking hypercars. Founded in 1994 by Christian von Koenigsegg, the company is a symbol of innovation, speed, and engineering excellence.
+            <br><strong>Founded:</strong> 1994, Ängelholm, Sweden<br>
+            <strong>Founder:</strong> Christian von Koenigsegg<br>
+            <strong>Headquarters:</strong> Ängelholm, Sweden
+        </p>
+    </section>
+
+    <!-- Models Section -->
+    <section class="content models-section">
+        <h2>Iconic Koenigsegg Models</h2>
+
+        <div class="models-grid">
+            <!-- Jesko Model Card -->
+            <div class="model-card">
+                <img src="first-production-koenigsegg-jesko-pic-removebg-preview.png" alt="Koenigsegg Jesko">
+                <h3>Koenigsegg Jesko</h3>
+                <p>
+                    A hypercar capable of speeds over 300 mph, the Jesko features a 5.0L twin-turbo V8 engine, advanced aerodynamics, and cutting-edge technology. Valued at around $3 million.
+                </p>
+            </div>
+
+            <!-- Gemera Model Card -->
+            <div class="model-card">
+                <img src="gaa4k0ywckk41-removebg-preview.png" alt="Koenigsegg Gemera">
+                <h3>Koenigsegg Gemera</h3>
+                <p>
+                    The Gemera, a revolutionary 4-seater hypercar, is priced at about $1.7 million. It combines a hybrid powertrain with Koenigsegg's unparalleled performance and innovation.
+                </p>
+            </div>
+
+            <!-- Regera Model Card -->
+            <div class="model-card">
+                <img src="2019-Koenigsegg-Regera-Blue-7156-3-removebg-preview.png" alt="Koenigsegg Regera">
+                <h3>Koenigsegg Regera</h3>
+                <p>
+                    With a price of $2.1 million, the Regera is powered by a twin-turbo V8 paired with three electric motors, delivering 1500 horsepower and a unique single-gear direct drive.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024 Koenigsegg. All rights reserved.
+    </footer>
+</body>
+</html>

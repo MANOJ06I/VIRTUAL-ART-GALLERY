@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description"content="my web page">
+    <meta name="keyword"content= "manoj web page">
+    <title><b>My First Web Page</b></title>
+    <h1><q>Headings Are Great Fun</q></h1>
+    <p>This is my first <b>paragraph</b> inmy new webpage. Thos is going to be <br> great.I am so exited I can contain <b>myself</b>.Don't you just love <br>
+         paragraphs ? I find them very useful</p>
+         <h1>Web Pages Are Exiciting Too </h1>
+    </head>
+    <body>
+        
+    </body>
+    </html>

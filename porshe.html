@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Cars</title>
+  <style>* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+
+.header {
+    background: url('porsche-header.jpg') no-repeat center center/cover; /* Stunning background image */
+    padding: 80px 20px;
+    text-align: center;
+    color: rgb(144, 148, 121);
+    position: relative;
+}
+
+.header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.header p {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background: #222;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.car-section {
+    background: #f0f0f0;
+    border-radius: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-content {
+    display: flex;
+    align-items: center;
+}
+
+.car-img {
+    width: 40%; /* Large image size */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.car-description {
+    flex: 1;
+}
+
+h2 {
+    color: #ff0033; /* Porsche red for titles */
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <h1>Porsche</h1>
+        <p>Engineered for Performance, Designed for Luxury</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#porsche-911">Porsche 911</a></li>
+            <li><a href="#porsche-cayman">Porsche Cayman</a></li>
+            <li><a href="#porsche-macan">Porsche Macan</a></li>
+            <li><a href="#about">About Porsche</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="porsche-911" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="porsche-model.png" alt="Porsche 911" />
+                <div class="car-description">
+                    <h2>Porsche 911</h2>
+                    <p>Timeless design and unmatched performance, the Porsche 911 sets the standard for sports cars.</p>
+                    <ul>
+                        <li>0-60 mph in 3.5 seconds</li>
+                        <li>Top speed: 205 mph</li>
+                        <li>Power: 473 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="porsche-cayman" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="porsche-718-boxster-model.png" alt="Porsche Cayman" />
+                <div class="car-description">
+                    <h2>Porsche Cayman</h2>
+                    <p>The Cayman combines a responsive chassis with a mid-engine layout for an exhilarating drive.</p>
+                    <ul>
+                        <li>0-60 mph in 4.5 seconds</li>
+                        <li>Top speed: 171 mph</li>
+                        <li>Power: 300 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="porsche-macan" class="car-section">
+            <div class="car-content">
+                <img class="car-img" src="porshe nor.png" alt="Porsche Macan" />
+                <div class="car-description">
+                    <h2>Porsche Macan</h2>
+                    <p>Versatile and sporty, the Macan offers luxury and practicality in a compact SUV form.</p>
+                    <ul>
+                        <li>0-60 mph in 6.3 seconds</li>
+                        <li>Top speed: 144 mph</li>
+                        <li>Power: 265 horsepower</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Porsche</h2>
+            <p>Porsche is a symbol of luxury and performance, known for its innovative engineering and iconic design.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Porsche AG</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            color: #e6e6e6;
+            background-color: #1c1c1c;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            width: 100%;
+            background: #000;
+            color: #a0a0a0;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 40px;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            background: url('your-hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            padding: 100px 20px;
+        }
+
+        /* About Section */
+        .about-section {
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #5c5c5c;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .about-section h2 {
+            font-size: 1.8em;
+            color: #a8a8a8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Models Section */
+        .models-section {
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px 20px;
+            margin: 20px auto;
+            color: #dcdcdc;
+        }
+
+        .models-section h2 {
+            font-size: 1.8em;
+            color: #a8a8a8;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .model {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .model img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .model-info {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .model-info h3 {
+            font-size: 1.5em;
+            color: #b0b0b0;
+        }
+
+        .model-info p {
+            font-size: 1em;
+            color: #e6e6e6;
+            line-height: 1.6;
+        }
+
+        .model img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            padding: 20px;
+            background: #111;
+            color: #999;
+            text-align: center;
+            font-size: 0.9em;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .model {
+                flex-direction: column;
+            }
+
+            .hero-image {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        Aston Martin
+    </header>
+
+    <!-- Hero Image -->
+    <section class="hero-image">
+        Craftsmanship & Power
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Aston Martin</h2>
+        <p>
+            Aston Martin is a British luxury automobile brand, known for its elegance, high-performance vehicles, and timeless design. Founded in 1913 by Lionel Martin and Robert Bamford, Aston Martin has become a symbol of luxury, speed, and sophistication.
+            <br><br>
+            <strong>Founded:</strong> 1913, London, United Kingdom<br>
+            <strong>Founders:</strong> Lionel Martin, Robert Bamford<br>
+            <strong>Headquarters:</strong> Gaydon, Warwickshire, United Kingdom
+        </p>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-section">
+        <h2>Iconic Aston Martin Models</h2>
+
+        <!-- DB11 -->
+        <div class="model">
+            <img src="aston kil.png" alt="Aston Martin DB11">
+            <div class="model-info">
+                <h3>Aston Martin DB11</h3>
+                <p>
+                    The DB11 is a grand tourer with stunning looks and impressive performance, powered by a 5.2-liter twin-turbo V12 engine. Starting at $200,000, it embodies Aston Martin's commitment to luxury and power.
+                </p>
+            </div>
+        </div>
+
+        <!-- Vantage -->
+        <div class="model">
+            <img src="aston mary me.png" alt="Aston Martin Vantage">
+            <div class="model-info">
+                <h3>Aston Martin Vantage</h3>
+                <p>
+                    With a starting price of $140,000, the Vantage is designed for pure sporting pleasure. It boasts a 4.0-liter V8 engine and a muscular, athletic design that sets it apart in the world of sports cars.
+                </p>
+            </div>
+        </div>
+
+        <!-- Valkyrie -->
+        <div class="model">
+            <img src="aston mary.png" alt="Aston Martin Valkyrie">
+            <div class="model-info">
+                <h3>Aston Martin Valkyrie</h3>
+                <p>
+                    Priced at a staggering $3 million, the Valkyrie is a hypercar with Formula 1-inspired aerodynamics and technology. It's the most ambitious car ever created by Aston Martin, aiming for ultimate performance and exclusivity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024 Aston Martin. All rights reserved.
+    </footer>
+
+</body>
+</html>
